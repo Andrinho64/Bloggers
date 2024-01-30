@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { UserType } from '../types';
 
 type Props = {
@@ -7,6 +8,7 @@ type Props = {
 export default function User({ userData }: Props) {
   return (
     <div>
+      <Link to={ `/posts/${userData.id}` }>Posts</Link>
       <p>
         {userData.firstName}
         {' '}
