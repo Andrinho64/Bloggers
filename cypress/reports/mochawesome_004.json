@@ -1,0 +1,351 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 8,
+    "passes": 0,
+    "pending": 0,
+    "failures": 8,
+    "start": "2024-01-30T18:27:08.269Z",
+    "end": "2024-01-30T18:27:14.273Z",
+    "duration": 6004,
+    "testsRegistered": 9,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 1,
+    "hasSkipped": true
+  },
+  "results": [
+    {
+      "uuid": "741ee835-af06-40d4-a2ef-d2381a782977",
+      "title": "",
+      "fullFile": "cypress/e2e/App.cy.js",
+      "file": "cypress/e2e/App.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "d2b98ef1-525a-46df-9a78-4bba5bf90dce",
+          "title": "1 - Crie as rotas para a aplicação",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Ao entrar na rota / é renderizado apenas o componente <Users />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar na rota / é renderizado apenas o componente <Users />",
+              "timedOut": null,
+              "duration": 698,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup();\ncy.get('[data-testid=\"users-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:43621/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:43621/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43621/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:43621/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:43621/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:43621/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:43621/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:43621/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at setup (webpack://blogger/./cypress/e2e/App.cy.js:4:5)\n    at Context.eval (webpack://blogger/./cypress/e2e/App.cy.js:9:4)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:5173\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "c73244fd-a63e-4eef-b61c-f29a96f3d685",
+              "parentUUID": "d2b98ef1-525a-46df-9a78-4bba5bf90dce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao entrar na rota /about é renderizado apenas o componente <About />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar na rota /about é renderizado apenas o componente <About />",
+              "timedOut": null,
+              "duration": 652,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup('about');\ncy.get('[data-testid=\"about-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/about\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/about\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:43621/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:43621/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43621/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:43621/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:43621/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:43621/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:43621/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:43621/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at setup (webpack://blogger/./cypress/e2e/App.cy.js:4:5)\n    at Context.eval (webpack://blogger/./cypress/e2e/App.cy.js:15:4)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:5173\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "55f29d7b-51bf-4ecb-8fbe-b7e55079b327",
+              "parentUUID": "d2b98ef1-525a-46df-9a78-4bba5bf90dce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao entrar na rota /posts é renderizado apenas o componente <Posts />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar na rota /posts é renderizado apenas o componente <Posts />",
+              "timedOut": null,
+              "duration": 614,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup('posts/id');\ncy.get('[data-testid=\"posts-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/posts/id\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/posts/id\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:43621/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:43621/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43621/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:43621/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:43621/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:43621/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:43621/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:43621/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at setup (webpack://blogger/./cypress/e2e/App.cy.js:4:5)\n    at Context.eval (webpack://blogger/./cypress/e2e/App.cy.js:21:4)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:5173\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "fcb26a9c-1df7-41b0-91fc-7a8790559d4b",
+              "parentUUID": "d2b98ef1-525a-46df-9a78-4bba5bf90dce",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Ao entrar em uma rota não existente é renderizado o componente <NotFound />",
+              "fullTitle": "1 - Crie as rotas para a aplicação Ao entrar em uma rota não existente é renderizado o componente <NotFound />",
+              "timedOut": null,
+              "duration": 625,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup('not-found');\ncy.get('[data-testid=\"not-found-page\"]').should('exist');\ncy.get('[data-testid$=\"-page\"]').should('have.length', 1);",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/not-found\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/not-found\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:43621/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:43621/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43621/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:43621/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:43621/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:43621/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:43621/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:43621/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at setup (webpack://blogger/./cypress/e2e/App.cy.js:4:5)\n    at Context.eval (webpack://blogger/./cypress/e2e/App.cy.js:27:4)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:5173\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "8ab860f9-ac96-4965-a8f7-7df377dd5176",
+              "parentUUID": "d2b98ef1-525a-46df-9a78-4bba5bf90dce",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "c73244fd-a63e-4eef-b61c-f29a96f3d685",
+            "55f29d7b-51bf-4ecb-8fbe-b7e55079b327",
+            "fcb26a9c-1df7-41b0-91fc-7a8790559d4b",
+            "8ab860f9-ac96-4965-a8f7-7df377dd5176"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 2589,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "db8ab36e-80c1-4cb9-926f-d0c73c945e41",
+          "title": "2- Crie dois NavLink dentro do componente Header",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O primeiro NavLink deve possuir o texto \"Home\" e a rota \"/\"",
+              "fullTitle": "2- Crie dois NavLink dentro do componente Header O primeiro NavLink deve possuir o texto \"Home\" e a rota \"/\"",
+              "timedOut": null,
+              "duration": 613,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a').contains(/home/i).should('have.attr', 'href', '/');",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `2- Crie dois NavLink dentro...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `2- Crie dois NavLink dentro...`\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:43621/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:43621/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43621/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:43621/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:43621/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:43621/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:43621/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:43621/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.setup (webpack://blogger/./cypress/e2e/App.cy.js:4:5)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:5173\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "3357107b-3013-417f-b649-33a4950c947e",
+              "parentUUID": "db8ab36e-80c1-4cb9-926f-d0c73c945e41",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O segundo NavLink deve possuir o texto \"About\" e a rota \"/about\"",
+              "fullTitle": "2- Crie dois NavLink dentro do componente Header O segundo NavLink deve possuir o texto \"About\" e a rota \"/about\"",
+              "timedOut": null,
+              "duration": 0,
+              "state": "skipped",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('a').contains(/about/i).should('have.attr', 'href', '/about');",
+              "err": {},
+              "uuid": "3dad11fd-cab2-47c9-b62f-15c4ff18e88c",
+              "parentUUID": "db8ab36e-80c1-4cb9-926f-d0c73c945e41",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3357107b-3013-417f-b649-33a4950c947e"
+          ],
+          "pending": [],
+          "skipped": [
+            "3dad11fd-cab2-47c9-b62f-15c4ff18e88c"
+          ],
+          "duration": 613,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "924c2f66-0e9f-4ee5-b307-dfc62e708c8c",
+          "title": "3 - Crie um link para a página de posts de um usuário",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O link deve possuir o texto \"Posts\" e a rota \"/posts/id\"",
+              "fullTitle": "3 - Crie um link para a página de posts de um usuário O link deve possuir o texto \"Posts\" e a rota \"/posts/id\"",
+              "timedOut": null,
+              "duration": 645,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "for (let id = 1; id <= _data.users.length; id++) {\n  cy.get(`a[href=\"/posts/${id}\"]`).should('exist');\n}",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `3 - Crie um link para a pág...`",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n\nBecause this error occurred during a `before each` hook we are skipping the remaining tests in the current suite: `3 - Crie um link para a pág...`\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:43621/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:43621/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43621/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:43621/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:43621/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:43621/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:43621/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:43621/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at Context.setup (webpack://blogger/./cypress/e2e/App.cy.js:4:5)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:5173\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "b261ddf3-a83c-43dd-9bc9-3555c89ec482",
+              "parentUUID": "924c2f66-0e9f-4ee5-b307-dfc62e708c8c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b261ddf3-a83c-43dd-9bc9-3555c89ec482"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 645,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        },
+        {
+          "uuid": "cceff867-5e35-43b2-bae9-c503a47ca062",
+          "title": "4 - Exiba os posts de um usuário",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "O componente <Posts /> deve renderizar apenas os posts do primeiro usuário",
+              "fullTitle": "4 - Exiba os posts de um usuário O componente <Posts /> deve renderizar apenas os posts do primeiro usuário",
+              "timedOut": null,
+              "duration": 683,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "setup('posts/1');\nconst othersPosts = _data.posts.filter(post => post.userId !== 1);\nothersPosts.forEach(post => {\n  cy.get('h1').should('not.contain', post.title);\n});\nconst userPosts = _data.posts.filter(post => post.userId === 1);\nuserPosts.forEach(post => {\n  cy.contains(post.title);\n});",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/posts/1\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/posts/1\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:43621/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:43621/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43621/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:43621/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:43621/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:43621/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:43621/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:43621/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at setup (webpack://blogger/./cypress/e2e/App.cy.js:4:5)\n    at Context.eval (webpack://blogger/./cypress/e2e/App.cy.js:57:4)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:5173\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "67024d78-2ada-4d59-8168-0cbabf9010cd",
+              "parentUUID": "cceff867-5e35-43b2-bae9-c503a47ca062",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "O componente <Posts /> deve renderizar os posts do usuário",
+              "fullTitle": "4 - Exiba os posts de um usuário O componente <Posts /> deve renderizar os posts do usuário",
+              "timedOut": null,
+              "duration": 635,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "_data.users.forEach(user => {\n  setup(`posts/${user.id}`);\n  const userPosts = _data.posts.filter(post => post.userId === user.id);\n  userPosts.forEach(post => {\n    cy.contains(post.title);\n  });\n});",
+              "err": {
+                "message": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/posts/1\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer",
+                "estack": "CypressError: `cy.visit()` failed trying to load:\n\nhttp://localhost:5173/posts/1\n\nWe attempted to make an http request to this URL but the request failed without a response.\n\nWe received this error at the network level:\n\n  > Error: connect ECONNREFUSED 127.0.0.1:5173\n\nCommon situations why this would fail:\n  - you don't have internet access\n  - you forgot to run / boot your web server\n  - your web server isn't accessible\n  - you have weird network configuration settings on your computer\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130312:74)\n    at visitFailedByErr (http://localhost:43621/__cypress/runner/cypress_runner.js:129704:12)\n    at <unknown> (http://localhost:43621/__cypress/runner/cypress_runner.js:130311:11)\n    at tryCatcher (http://localhost:43621/__cypress/runner/cypress_runner.js:1807:23)\n    at Promise._settlePromiseFromHandler (http://localhost:43621/__cypress/runner/cypress_runner.js:1519:31)\n    at Promise._settlePromise (http://localhost:43621/__cypress/runner/cypress_runner.js:1576:18)\n    at Promise._settlePromise0 (http://localhost:43621/__cypress/runner/cypress_runner.js:1621:10)\n    at Promise._settlePromises (http://localhost:43621/__cypress/runner/cypress_runner.js:1697:18)\n    at _drainQueueStep (http://localhost:43621/__cypress/runner/cypress_runner.js:2407:12)\n    at _drainQueue (http://localhost:43621/__cypress/runner/cypress_runner.js:2400:9)\n    at Async._drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2416:5)\n    at Async.drainQueues (http://localhost:43621/__cypress/runner/cypress_runner.js:2286:14)\nFrom Your Spec Code:\n    at setup (webpack://blogger/./cypress/e2e/App.cy.js:4:5)\n    at eval (webpack://blogger/./cypress/e2e/App.cy.js:72:6)\nat Array.forEach (<anonymous>)\n    at Context.eval (webpack://blogger/./cypress/e2e/App.cy.js:71:10)\n\nFrom Node.js Internals:\n  Error: connect ECONNREFUSED 127.0.0.1:5173\n      at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1187:16)",
+                "diff": null
+              },
+              "uuid": "a4141324-392f-4188-bbfa-bd05e0773eac",
+              "parentUUID": "cceff867-5e35-43b2-bae9-c503a47ca062",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "67024d78-2ada-4d59-8168-0cbabf9010cd",
+            "a4141324-392f-4188-bbfa-bd05e0773eac"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 1318,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
